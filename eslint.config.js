@@ -32,6 +32,9 @@ export default typescript.config(
         parser: typescript.parser,
       },
     },
+    rules: {
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+    },
   },
   prettier,
 )

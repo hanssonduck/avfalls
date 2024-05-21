@@ -3,7 +3,7 @@
   "name": "avfalls",
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "vite dev --host",
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --cache --write --ignore-path .gitignore .",
@@ -25,6 +25,11 @@
       }
     ]
   },
+  "dependencies": {
+    "@pothos/core": "^3.41.1",
+    "graphql": "^16.8.1",
+    "graphql-yoga": "^5.3.1"
+  },
   "trustedDependencies": [
     "svelte-preprocess"
   ],
@@ -39,6 +44,9 @@
     "eslint-config-flat-gitignore": "^0.1.5",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.39.0",
+    "graphql-config": "^5.0.3",
+    "houdini": "^1.2.47",
+    "houdini-svelte": "^1.2.47",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-svelte": "^3.2.3",
@@ -46,6 +54,7 @@
     "svelte-eslint-parser": "^0.36.0",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.10.0",
+    "typescript-svelte-plugin": "^0.3.38",
     "vite": "^5.2.11"
   }
 }

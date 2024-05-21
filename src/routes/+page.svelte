@@ -1,4 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>
-  Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<script lang="ts">
+  import type { PageData } from './$houdini'
+
+  const { data }: { data: PageData } = $props()
+  const { Ping } = $derived(data)
+</script>
+
+<pre>{JSON.stringify($Ping, null, 2)}</pre>
